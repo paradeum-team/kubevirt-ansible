@@ -1,7 +1,7 @@
 storage_namespace: "kube-system"
 cdi_namespace: "{{ cdi_image_namespace | default('kube-system') }}"
 cluster: "openshift"
-cinder_provisioner_repo: "quay.io/aglitke"
+cinder_provisioner_repo: "quay.azk8s.cn/aglitke"
 cinder_provisioner_release: "sprint4"
 apb_action: "provision"
 

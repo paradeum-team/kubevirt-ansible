@@ -14,21 +14,21 @@ Default parameters can be found in `vars/all.yml` or `roles/kubevirt_web_ui/defa
 - platform: must be set to "openshift"
 - apb_action: `provision` or `deprovision`
 - registry_url: docker registry
-  - example: `quay.io`
+  - example: `quay.azk8s.cn`
 - registry_namespace: 
   - example: kubevirt
 
 ### Specific parameters:
 - kubevirt_web_ui_operator_image_tag: image tag of the operator
   - example: v1.4.0-3
-  - list of available tags: [see quay.io](https://quay.io/repository/kubevirt/kubevirt-web-ui-operator?tab=tags)
+  - list of available tags: [see quay.azk8s.cn](https://quay.azk8s.cn/repository/kubevirt/kubevirt-web-ui-operator?tab=tags)
 - kubevirt_web_ui_version:
   - version of the Web UI to be installed by the Operator
   - conforms kubevirt-web-ui image tag
   - can be be changed after initial deployment by patching the Custom Resource (see bellow)
   - example: v1.4.0-9
   - list of Web UI releases: [https://github.com/kubevirt/web-ui/releases](https://github.com/kubevirt/web-ui/releases)
-  - list of docker tags: [https://quay.io/repository/kubevirt/kubevirt-web-ui?tab=tags](https://quay.io/repository/kubevirt/kubevirt-web-ui?tab=tags)
+  - list of docker tags: [https://quay.azk8s.cn/repository/kubevirt/kubevirt-web-ui?tab=tags](https://quay.azk8s.cn/repository/kubevirt/kubevirt-web-ui?tab=tags)
 kubevirt_web_ui_branding: either `openshiftvirt` or `okdvirt`
 
 ### Optional Variables:
@@ -84,7 +84,7 @@ metadata:
   name: kubevirt-web-ui
 spec:
   version: "v1.4.0-9"
-  registry_url: "quay.io"
+  registry_url: "quay.azk8s.cn"
   registry_namespace: "kubevirt"
   branding: "okdvirt"
 EOF | oc apply -f -

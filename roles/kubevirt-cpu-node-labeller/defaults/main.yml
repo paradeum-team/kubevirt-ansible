@@ -2,7 +2,7 @@
 kubevirt_node_labeller_namespace: "kubevirt"
 kubevirt_cpu_node_labeller_files_dir: "{{ role_path }}/templates"
 cluster_command: "oc" # in case the roles/playbook is not executed from kubevirt.yml
-registry_url: "quay.io"
+registry_url: "quay.azk8s.cn"
 registry_namespace: "ksimon"
 docker_tag: "0.0.1"
 docker_prefix: "{{ registry_url }}/{{ registry_namespace }}"

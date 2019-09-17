@@ -1,7 +1,7 @@
 ---
 kubevirt_web_ui_namespace: "kubevirt-web-ui"
 openshift_console_namespace: "openshift-console"
-registry_url: "quay.io"
+registry_url: "quay.azk8s.cn"
 registry_namespace: "kubevirt"
 
 files_dir: "./roles/kubevirt_web_ui/files"

@@ -4,6 +4,6 @@ metadata:
   name: kubevirt-web-ui
 spec:
   version: "v1.4.0-9"
-  registry_url: "quay.io"
+  registry_url: "quay.azk8s.cn"
   registry_namespace: "kubevirt"
   branding: "okdvirt"

@@ -13,7 +13,7 @@ Deploy KubeVirt resources onto a cluster.
 |release_manifest_url|https://github.com/kubevirt/kubevirt/releases|||
 |kubevirt_template_dir|./templates||Location of the deployment template file.|
 |registry_namespace | kubevirt | |Container image organization.|
-|registry_url | docker.io | |Container image registry.|
+|registry_url | dockerhub.azk8s.cn | |Container image registry.|
 | storage_role | storage-none | <ul><li>storage-none</li><li>storage-demo</li><li>storage-glusterfs</li></ul> | Storage role to install with KubeVirt.|
 | network_role | network-multus | <ul><li>network-none</li><li>network-multus</li></ul> | Network role to install with KubeVirt.|
 | version |0.13.3|<ul><li>0.13.3</li><li>0.9.6</li><li>0.8.0</li><li>0.7.0</li><li>0.6.0</li><li>0.5.0</li><li>0.4.1</li><li>0.4.0</li><li>0.3.0</li><li>0.2.0</li><li>0.1.0</li></ul>|KubeVirt release version.|

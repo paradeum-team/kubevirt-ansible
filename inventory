@@ -17,7 +17,7 @@ openshift_install_examples=false
 openshift_master_default_subdomain=cloudapps.example.com
 
 # Image used for the kubevirt/web-ui deployment
-kubevirt_web_ui_image_name=quay.io/kubevirt/kubevirt-web-ui:v1.3-9
+kubevirt_web_ui_image_name=quay.azk8s.cn/kubevirt/kubevirt-web-ui:v1.3-9
 # Master public API URL
 public_master_hostname=openshift.cloudapps.example.com:443
 
@@ -37,7 +37,7 @@ ansible_service_broker_local_registry_whitelist=[".*-apb$"]
 ansible_service_broker_image_prefix=ansibleplaybookbundle/origin-
 ansible_service_broker_image_tag=latest
 
-ansible_service_broker_etcd_image_prefix=quay.io/coreos/
+ansible_service_broker_etcd_image_prefix=quay.azk8s.cn/coreos/
 ansible_service_broker_etcd_image_tag=latest
 # END ANSIBLE BROKER CONFIG
 

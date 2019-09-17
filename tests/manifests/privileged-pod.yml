@@ -28,7 +28,7 @@ spec:
         - -c
         - |
           sleep infinity
-        image: docker.io/openshift/origin-node:v3.11
+        image: dockerhub.azk8s.cn/openshift/origin-node:v3.11
         resources:
           requests:
             cpu: "100m"

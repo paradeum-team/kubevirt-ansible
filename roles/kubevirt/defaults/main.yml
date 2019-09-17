@@ -1,5 +1,5 @@
 namespace: "kubevirt"
-registry_url: "docker.io"
+registry_url: "dockerhub.azk8s.cn"
 registry_namespace: "kubevirt"
 docker_prefix: "{{ registry_url }}/{{ registry_namespace }}"
 

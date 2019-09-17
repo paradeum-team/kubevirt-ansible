@@ -1,31 +1,31 @@
-registry_url: "docker.io"
+registry_url: "dockerhub.azk8s.cn"
 registry_namespace: "kubevirt"
 network_namespace: "kube-system"
 docker_tag: "v0.13.3"
 
 multus_provisioner_name: "kube-multus-amd64"
-multus_provisioner_repo: "docker.io/nfvpe/multus"
+multus_provisioner_repo: "dockerhub.azk8s.cn/nfvpe/multus"
 multus_provisioner_release: "snapshot"
 
-cni_provisioner_repo: "quay.io/kubevirt/cni-default-plugins"
+cni_provisioner_repo: "quay.azk8s.cn/kubevirt/cni-default-plugins"
 cni_provisioner_name: "kube-cni-plugins-amd64"
 cni_provisioner_release: "latest"
 
 # This daemon set includes ovs cni plugin and marker
 ovs_cni_daemonset_name: "kube-ovs-cni-amd64"
 
-ovs_cni_plugin_provisioner_repo: "quay.io/kubevirt/ovs-cni-plugin"
+ovs_cni_plugin_provisioner_repo: "quay.azk8s.cn/kubevirt/ovs-cni-plugin"
 ovs_cni_plugin_provisioner_release: "latest"
 ovs_cni_plugin_container_name: "plugin"
 
-ovs_cni_marker_provisioner_repo: "quay.io/kubevirt/ovs-cni-marker"
+ovs_cni_marker_provisioner_repo: "quay.azk8s.cn/kubevirt/ovs-cni-marker"
 ovs_cni_marker_provisioner_release: "latest"
 ovs_cni_marker_container_name: "marker"
 ovs_cni_marker_service_account: "ovs-cni-marker"
 ovs_cni_marker_cluster_role: "ovs-cni-marker-cr"
 ovs_cni_marker_cluster_role_binding: "ovs-cni-marker-crb"
 
-origin_node_provisioner_repo: "docker.io/openshift/origin-node"
+origin_node_provisioner_repo: "dockerhub.azk8s.cn/openshift/origin-node"
 origin_node_provisioner_release: "latest"
 origin_node_provisioner_container_name: "ovs-vsctl"
 
@@ -36,13 +36,13 @@ legacy_ovs_provisioner_name: "kube-ovs-cni-plugin-amd64"
 legacy_origin_node_provisioner_name: "ovs-vsctl-amd64"
 
 sriovdp_provisioner_name: "kube-sriov-device-plugin-amd64"
-# todo(ihar): switch back to docker.io/nfvpe/sriov-device-plugin when
+# todo(ihar): switch back to dockerhub.azk8s.cn/nfvpe/sriov-device-plugin when
 # https://github.com/intel/sriov-network-device-plugin/pull/52 is merged
-sriovdp_provisioner_repo: "quay.io/booxter/sriov-device-plugin"
+sriovdp_provisioner_repo: "quay.azk8s.cn/booxter/sriov-device-plugin"
 sriovdp_provisioner_release: "latest"
 
 sriovcni_provisioner_name: "kube-sriov-cni-amd64"
-sriovcni_provisioner_repo: "docker.io/nfvpe/sriov-cni"
+sriovcni_provisioner_repo: "dockerhub.azk8s.cn/nfvpe/sriov-cni"
 sriovcni_provisioner_release: "latest"
 
 sriov_crd_name: "sriov-net"
