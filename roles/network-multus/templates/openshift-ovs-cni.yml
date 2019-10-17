@@ -69,7 +69,7 @@ spec:
           - -node-name
           - $(NODE_NAME)
           - -ovs-socket
-          - unix:///host/run/openvswitch/db.sock
+          - /host/run/openvswitch/db.sock
         volumeMounts:
           - name: ovs-run
             mountPath: /host/run/openvswitch
